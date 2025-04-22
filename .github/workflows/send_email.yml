@@ -26,6 +26,6 @@ jobs:
           EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
-          EMAIL_SUBJECT: "Your Recurring Email"
-          EMAIL_BODY: "This is an automated email sent from GitHub Actions."
+          EMAIL_SUBJECT: "What did you get done yesterday?"
+          EMAIL_BODY: "What did you get done yesterday?\n\nReply with a list."
         run: python send_email.py
